@@ -1,3 +1,38 @@
+/* 
+==================================================
+Name : lcd_copy.c
+Version : 1.0
+Copyright : 
+
+ * Copyright (C) 2025 JeaYoung YEOM
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ 
+Description : 
+ * This file provides basic LCD control functions for the lcd_app_copy application.
+ * Functions include:
+ *   - lcd_init / lcd_deinit: Initialize or reset the LCD.
+ *   - lcd_enable: Latch data to DDRAM (supports 4-bit interface).
+ *   - lcd_data_send_4bit: Send data using 4-bit mode (high nibble -> latch -> low nibble -> latch).
+ *   - EXEC_CALLBACK_CON: Configure RW/RS pins before data transmission (used as callbacks).
+ *   - config_control_*: Callback handlers for RW/RS states (4 cases).
+ *
+ * Refer to README.md for usage details of remaining functions.
+
+===================================================
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
