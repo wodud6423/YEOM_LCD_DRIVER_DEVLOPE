@@ -1,0 +1,1 @@
+cmd_/home/yeom/workspace/ldd/custom_drivers_copy/test4/YEOM_LCD_DRIVER_V.1/source/gpio-sysfs_copy.mod := { echo  /home/yeom/workspace/ldd/custom_drivers_copy/test4/YEOM_LCD_DRIVER_V.1/source/gpio-sysfs_copy.o;  echo; } > /home/yeom/workspace/ldd/custom_drivers_copy/test4/YEOM_LCD_DRIVER_V.1/source/gpio-sysfs_copy.mod
